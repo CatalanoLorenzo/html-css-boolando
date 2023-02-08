@@ -1,116 +1,261 @@
+:root{
+    --bollando-navcolor:#ff6900;
+
+}
 /* startregion utility */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.d-flex{
+
+.d-flex {
     display: flex;
 }
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
 /* endregion utility */
 /* debug */
-.debug nav{
+/* .debug nav {
     background-color: orange;
 }
-.debug .gender{
+
+.debug .gender {
     background: orangered;
 }
-.debug .logo{
+
+.debug .logo {
     background-color: orangered;
 }
-.debug .hicon{
+
+.debug .hicon {
     background-color: orangered;
-}
-.debug .card{
+} */
+
+/* .debug .card {
     background-color: antiquewhite;
-}
-.debug .heart{
+} */
+
+/* .debug .heart {
     background-color: aqua;
     width: 20px;
     height: 20px;
 }
-.debug .sales{
+ */
+/* .debug .sales {
     background-color: red;
     width: 100%;
 }
-.debug .green{
+
+.debug .green {
     background-color: green;
     width: 30px;
-}
-.debug .textarea{
+} */
+
+/* .debug .textarea {
     background-color: blueviolet;
     width: 100%;
-}
-.debug .item{
+} */
+
+/* .debug .item {
     height: 298px;
-}
-.debug footer{
+} */
+
+.debug footer {
     background-color: gray;
 }
-.debug .info{
+
+.debug .info {
     background-color: aqua;
 }
-.debug .meet{
+
+.debug .meet {
     background-color: azure;
 }
+
 /* /debug */
 /* header */
-header{
+header {
     position: fixed;
     width: 100%;
 }
-nav{
+
+.space {
+    height: 40px;
+}
+
+nav {
     justify-content: center;
     padding: 0.5rem 20%;
     width: 100%;
+    background-color: var(--bollando-navcolor);
 }
-.menu{
+
+.menu {
     justify-content: space-between;
+    align-items: center;
     width: 100%;
-    max-width: 1140px;  
+    max-width: 1140px;
 }
-.space{
-    height: 40px;
+
+.gender a {
+    color: white;
+    font-size: 1rem;
+    padding: 0.2rem;
 }
+
+.logo img {
+    height: 1.5rem;
+    padding: 0.2rem;
+}
+
+.hicon {
+    justify-content: center;
+}
+
+.icon {
+    width: 1rem;
+    fill: white;
+    padding: 0.2rem;
+}
+
 /* /header */
 /* main */
-.container{
+.container {
     justify-content: space-between;
     flex-wrap: nowrap;
     max-width: 1140px;
     margin: 0 auto;
     padding: 1% 0%;
 }
-.card{
-    width: 30%;
+
+.card {
+    display: inline-block;
+    width: 33%;
     min-width: 144px;
-    margin: 0 2%;
     height: 100%;
+    border-color: white;
+    border-style: solid;
+    border-width: 2rem 1rem;
 }
-.item{
+
+.item {
     position: relative;
+    height: 400px;
+    background-size: cover;
+    background-position: top-center;
 }
-.heart{
+
+.heart {
     position: absolute;
     right: 0;
     top: 5%;
+    background-color: white;
+    padding: 0.2rem;
+    font-size: 2rem;
 }
-.sales{
+
+.sales {
     position: absolute;
-    bottom: 0;
+    bottom: 5%;
+    color: white;
+    font-size: 0.7rem;
 }
-.sales{
+
+.forcent{
     display: inline-block;
+    background-color: red;
+    padding: 0.5rem;
 }
-.green{
+.forcent::before{
+    content: "%";
+}
+.green {
     display: inline-block;
+    background-color: green;
+    padding: 0.5rem;
+}
+.textarea{
+    background-color: white;
+}
+.textarea{
+    color: black;
+}
+.textarea h4{
+    font-size: 0.7rem;
+}
+.textarea h2{
+    text-decoration:double;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.textarea .price{
+    color: red;
+    font-size: 0.7rem;
+    text-decoration: none;
+}
+.textarea span{
+    text-decoration:line-through;
+    font-size: 0.7rem;
+    margin: 0 0.2rem;
+    font-weight: bolder;
+}
+.textarea span::after{
+    content: "€";
+}
+/* card 1 */
+.card:hover .img1{
+    background-image: url(../img/1b.webp);
+}
+.img1{
+    background-image: url(../img/1.webp);
+}
+/* card 2 */
+.card:hover .img2{
+    background-image: url(../img/2b.webp);
+}
+.img2{
+    background-image: url(../img/2.webp);
+}
+/* card 3 */
+.card:hover .img3{
+    background-image: url(../img/3b.webp);
+}
+.img3{
+    background-image: url(../img/3.webp);
+}
+/* card 4 */
+.card:hover .img4{
+    background-image: url(../img/4b.webp);
+}
+.img4{
+    background-image: url(../img/4.webp);
+}
+/* card 5 */
+.card:hover .img5{
+    background-image: url(../img/5b.webp);
+}
+.img5{
+    background-image: url(../img/5.webp);
+}
+/* card 6 */
+.card:hover .img6{
+    background-image: url(../img/6b.webp);
+}
+.img6{
+    background-image: url(../img/6.webp);
 }
 /* /main */
 /* footer */
-.footerbar{
+.footerbar {
     justify-content: center;
 }
-.bar{
+
+.bar {
     justify-content: space-between;
     max-width: 1140px;
     width: 100%;
