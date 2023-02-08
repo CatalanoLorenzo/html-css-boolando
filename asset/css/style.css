@@ -58,6 +58,15 @@
 .debug .item{
     height: 298px;
 }
+.debug footer{
+    background-color: gray;
+}
+.debug .info{
+    background-color: aqua;
+}
+.debug .meet{
+    background-color: azure;
+}
 /* /debug */
 /* header */
 header{
@@ -100,4 +109,14 @@ nav{
 }
 .green{
     display: inline-block;
+}
+/* /main */
+/* footer */
+.footerbar{
+    justify-content: center;
+}
+.bar{
+    justify-content: space-between;
+    max-width: 1140px;
+    width: 100%;
 }
