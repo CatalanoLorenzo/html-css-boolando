@@ -1,0 +1,32 @@
+/* startregion utility */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.d-flex{
+    display: flex;
+}
+/* endregion utility */
+/* debug */
+.debug nav{
+    background-color: orange;
+}
+.debug gender{
+    background: orangered;
+}
+.debug logo{
+    background-color: orangered;
+}
+.debug hicon{
+    background-color: orangered;
+}
+/* /debug */
+/* header */
+nav{
+    justify-content: space-between;
+    padding: 0.5rem 20%;
+    width: 100%;
+    position: fixed;
+}
+/* /header */
