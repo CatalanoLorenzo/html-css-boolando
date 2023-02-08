@@ -9,9 +9,6 @@
 }
 /* endregion utility */
 /* debug */
-.debug .space{
-    height: 40px;
-}
 .debug nav{
     background-color: orange;
 }
@@ -24,19 +21,8 @@
 .debug .hicon{
     background-color: orangered;
 }
-.debug .container{
-    padding: 1% 0%;
-}
 .debug .card{
     background-color: antiquewhite;
-    height: 100%;
-}
-.debug .menu{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1140px;
-
 }
 .debug .heart{
     background-color: aqua;
@@ -78,6 +64,14 @@ nav{
     padding: 0.5rem 20%;
     width: 100%;
 }
+.menu{
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1140px;  
+}
+.space{
+    height: 40px;
+}
 /* /header */
 /* main */
 .container{
@@ -85,12 +79,13 @@ nav{
     flex-wrap: nowrap;
     max-width: 1140px;
     margin: 0 auto;
-
+    padding: 1% 0%;
 }
 .card{
     width: 30%;
     min-width: 144px;
     margin: 0 2%;
+    height: 100%;
 }
 .item{
     position: relative;
